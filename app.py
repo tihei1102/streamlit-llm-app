@@ -26,8 +26,6 @@ else:
 if st.button("実行"):
     st.divider()
     import os
-    from google.colab import userdata
-    os.environ["OPENAI_API_KEY"] = userdata.get("OPENAI_API_KEY")
 
     if selected_item == "リサーチ手法専門家":
         if input_message:
