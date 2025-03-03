@@ -30,7 +30,7 @@ if st.button("実行"):
     if selected_item == "リサーチ手法専門家":
         if input_message:
             from langchain_openai import ChatOpenAI
-            from langchain.schema import SystemMessage, HumanMessage, AIMessage
+            from langchain.schema import SystemMessage, HumanMessage
             llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
 
             messages = [
@@ -46,7 +46,7 @@ if st.button("実行"):
     else:
         if input_message:
             from langchain_openai import ChatOpenAI
-            from langchain.schema import SystemMessage, HumanMessage, AIMessage
+            from langchain.schema import SystemMessage, HumanMessage
             llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
 
             messages = [
