@@ -1,10 +1,9 @@
 import os
 from dotenv import load_dotenv
 load_dotenv()
-open_ai_api_key = os.getenv("OPENAI_API_KEY")
-API_KEY = st.secrets['app.py']['app_APIKey']
 
 import streamlit as st
+open_ai_api_key = st.secrets["OPENAI"]["OPENAI_API_KEY"]
 
 st.title("課題アプリ: 専門家チャットボット")
 
