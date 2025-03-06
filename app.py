@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 load_dotenv()
-open_ai_api_key = os.getenv("OPENAI_API_KEY")
+API_KEY = st.secrets['app.py']['app_APIKey']
 
 import streamlit as st
 
